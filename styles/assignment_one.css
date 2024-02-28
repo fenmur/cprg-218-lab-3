@@ -1,0 +1,116 @@
+@import url(reset.css);
+@import url(global.css);
+@import url(fonts.css);
+
+
+
+/*Mobile Layout */
+
+.card-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* Tablet Layout */
+
+@media (min-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+      margin-right: 20px;
+    }
+  
+/* Last card with full width */
+    .card:last-child {
+      width: 100%;
+      margin-right: 0
+    }
+  }
+
+/*Desktop layout */
+
+@media (min-width: 1200px) {
+    .card {
+      width: calc(33.333% - 20px);
+      margin-right: 20px;
+    }
+    .card:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+
+ /*Card styles */
+
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  width: 24rem;
+}
+
+img {
+  border-bottom: 0.25rem solid #fc0;
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: auto;
+  width: 100%;
+
+}
+
+  /* Clear margin for every 3rd card */
+
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+
+/* Added Fonts */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.1;
+    margin: 1rem 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  
+  h4, h5, h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
