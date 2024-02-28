@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif; 
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
@@ -36,13 +36,11 @@ h4, h5, h6 {
   font-size: 1.25rem;
   font-weight: 600;
 }
-
 p {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
 }
-
 
 button {
   font-size: 1rem;
