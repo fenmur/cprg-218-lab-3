@@ -25,17 +25,22 @@
 /* Desktop layout */
 
 @media (min-width: 1200px) {
-    .card {
-        width: calc(33.333% - 20px);
-        margin-right: 20px;
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        background-color: #f4f2f7; /* Soft lavender background */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the cards horizontally */
     }
-
-}
-
+  
+    .card {
+      width: calc(33.333% - 20px);
+      margin: 10px;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      background-color: #f4f2f7; /* Soft lavender background */
+    }
+  }
 /* Clear margin for every 3rd card */
+
 .card:nth-child(3n) {
     margin-right: 0;
 }
@@ -44,16 +49,16 @@
  /*Card styles */
 
  .card {
-    background-color: #59598e; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    width: calc(33.333% - 20px); 
-    margin: 10px; 
+    background-color: #59598e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 24rem; 
+    margin: 10px;
+    padding: 10px; 
   }
 
-
 img {
-
         border: 5px solid #d3a3e6; /* Bright lavender rounded stroke */
         border-radius: 20px;
         width: 100%;
