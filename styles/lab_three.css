@@ -1,13 +1,9 @@
-@import url(reset.css);
-@import url(global.css);
-@import url(fonts.css);
-
 
 
 /*Mobile Layout */
 
 .card-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -15,52 +11,54 @@
 
 @media (min-width: 768px) {
     .card {
-      width: calc(50% - 20px);
-      margin-right: 20px;
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        background-color: #f4f2f7; /* Soft lavender background */
     }
   
-/* Last card with full width */
-    .card:last-child {
-      width: 100%;
-      margin-right: 0
-    }
-  }
 
-/*Desktop layout */
+ }
+
+
+/* Desktop layout */
 
 @media (min-width: 1200px) {
     .card {
-      width: calc(33.333% - 20px);
-      margin-right: 20px;
+        width: calc(33.333% - 20px);
+        margin-right: 20px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        background-color: #f4f2f7; /* Soft lavender background */
     }
-    .card:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
+
+}
+
+/* Clear margin for every 3rd card */
+.card:nth-child(3n) {
+    margin-right: 0;
+}
 
 
  /*Card styles */
 
-.card {
-  background-color: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-  width: 24rem;
-}
+ .card {
+    background-color: #59598e; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: calc(33.333% - 20px); 
+    margin: 10px; 
+  }
+
 
 img {
-  border-bottom: 0.25rem solid #fc0;
-  border-radius: 0.25rem 0.25rem 0 0;
-  height: auto;
-  width: 100%;
 
-}
-
-  /* Clear margin for every 3rd card */
-
-  .card:nth-child(3n) {
-    margin-right: 0;
-  }
+        border: 5px solid #d3a3e6; /* Bright lavender rounded stroke */
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
 
 
 /* Added Fonts */
@@ -113,3 +111,20 @@ body {
     font-weight: 500;
     font-family: "Nunito", sans-serif;
   }
+
+/* Sections */
+
+.container {
+    margin: 3rem auto;
+    max-width: 75rem;
+    padding: 3rem 1.5rem;
+    position: relative;
+    background-color: #394867;
+}
+
+/* Section Header Content */
+.header-container {
+    background-color: #c1b5df;
+    text-align: center;
+    padding: 6rem 1rem;
+}
