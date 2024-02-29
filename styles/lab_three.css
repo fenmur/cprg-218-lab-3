@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    background-color: #AF97B3; 
 }
 
 
@@ -9,6 +10,7 @@ body, html {
     align-items: center; 
     display: flex;
     flex-wrap: wrap;
+
 }
 
 /* Tablet Layout */
@@ -19,12 +21,11 @@ body, html {
         margin: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #f4f2f7;
+        background-color: #825D89;
         max-width: calc(33.333% - 20px); 
     }
 
- }
-
+}
 
 /* Desktop layout */
 
@@ -35,7 +36,7 @@ body, html {
         margin: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #f4f2f7;
+        background-color: #D7B0DE;
         max-width: calc(33.333% - 20px); 
     }
   }
@@ -92,16 +93,19 @@ body {
     font-weight: 300; 
     line-height: 1.5;
     text-align: center;
+    color: #251423;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif; 
     text-align: center; 
+    color: #394867;
 }
 
 
 
 /* Section Header Content */
+
 .container {
     margin: 3rem auto;
     max-width: 75rem;
