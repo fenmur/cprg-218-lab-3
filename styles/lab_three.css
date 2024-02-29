@@ -1,8 +1,12 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
 
 /*Mobile Layout */
-
 .card-container {
+    align-items: center; 
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,59 +15,73 @@
 
 @media (min-width: 768px) {
     .card {
-        width: calc(50% - 20px);
-        margin-right: 20px;
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        background-color: #f4f2f7; /* Soft lavender background */
+        width: calc(33.333% - 20px); 
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #f4f2f7;
+        max-width: calc(33.333% - 20px); 
     }
-  
 
  }
 
 
 /* Desktop layout */
 
+
 @media (min-width: 1200px) {
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* Center the cards horizontally */
-    }
-  
     .card {
-      width: calc(33.333% - 20px);
-      margin: 10px;
-      border-radius: 10px; /* Rounded corners */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-      background-color: #f4f2f7; /* Soft lavender background */
+        width: calc(33.333% - 20px); 
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #f4f2f7;
+        max-width: calc(33.333% - 20px); 
     }
   }
+
+
+
+
 /* Clear margin for every 3rd card */
 
 .card:nth-child(3n) {
     margin-right: 0;
 }
 
+ 
 
- /*Card styles */
+ /* Card image styles */
 
- .card {
-    background-color: #59598e;
+ .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+ }
+
+.card {
+    width: calc(33.333% - 20px);
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 24rem; 
-    margin: 10px;
-    padding: 10px; 
-  }
+    background-color: #f4f2f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
 
-img {
-        border: 5px solid #d3a3e6; /* Bright lavender rounded stroke */
-        border-radius: 20px;
-        width: 100%;
-        height: auto;
-    }
+.card img {
+    border: 5px solid #d3a3e6;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    justify-content: center; 
+
+}
 
 
 /* Added Fonts */
@@ -73,61 +91,25 @@ body {
     font-size: 1rem;
     font-weight: 300; 
     line-height: 1.5;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-   font-family: "Playfair Display", serif; 
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  
-  h4, h5, h6 {
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-  
-  p {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-  }
-  
-  button {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: "Nunito", sans-serif;
-  }
+    text-align: center;
+}
 
-/* Sections */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif; 
+    text-align: center; 
+}
 
+
+
+/* Section Header Content */
 .container {
     margin: 3rem auto;
     max-width: 75rem;
     padding: 3rem 1.5rem;
-    position: relative;
     background-color: #394867;
+    text-align: center;
 }
 
-/* Section Header Content */
 .header-container {
     background-color: #c1b5df;
     text-align: center;

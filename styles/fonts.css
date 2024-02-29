@@ -1,48 +1,54 @@
-body {
-  font-family: "Nunito", sans-serif; 
-  font-size: 1rem;
-  font-weight: 300; 
-  line-height: 1.5;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
- font-family: "Playfair Display", serif; 
-}
+<body>
+  <div class="header-container">
+    <h1>Assignment 1</h1>
+    <h2>Responsive CSS Layout</h2>
+  </div>
+  <section class="container">
+    <ul class="card-container">
+      <li class="card">
+        <img src="assets/soap1.jpg" alt="Soap 1">
+        <div class="card-content">
+          <h3 class="subheader">Our Collections</h3>
+          <h4 class="header">For Sensitive Skin</h4>
+          <p class="paragraph">Discover our Sensitive Collection.</p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/soap2.jpg" alt="Soap 2">
+        <div class="card-content">
+          <h3 class="subheader">Soaps</h3>
+          <h4 class="header">For Oily skin</h4>
+          <p class="paragraph">Let's solve the problematic skin and break the breakout</p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/soap3.jpg" alt="Soap 3">
+        <div class="card-content">
+          <h3 class="subheader">Our Soaps</h3>
+          <h4 class="header">Lizard</h4>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </li>
+      <li class="card">
+      <img src="assets/soap4.jpg" alt="Soap 4">
+      <div class="card-content">
+        <h3 class="subheader">Animals</h3>
+        <h4 class="header">Frog</h4>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </li>
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
+    <li class="card">
+      <img src="assets/soap5.jpg" alt="Soap 5">
+      <div class="card-content">
+        <h3 class="subheader">Animals</h3>
+        <h4 class="header">Monkey</h4>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </li>
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
+    </ul>
+  </section>
+</body>
 
-h3 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-h4, h5, h6 {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-button {
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "Nunito", sans-serif;
-}
